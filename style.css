@@ -1,0 +1,238 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  body{
+      background-color: rgba(19, 99, 99, 0.908);
+      background-image: url(../images/pexels-photo-417074.jpeg);
+      background-size: cover;
+     
+  }
+  
+  #image{
+      border-radius: 10px;
+      display: block;
+      margin: 20px 0px;
+  }
+  ul{
+    list-style-type: circle;
+    transition: none;
+  }
+  a{
+      text-decoration: none;
+     
+  }
+  #welcome{
+      color:#000;
+      border:4px solid black;
+      display:inline-flex;
+      background-color: red;
+      margin-left:20%;
+  
+  }
+  #list{
+      color:lawngreen;
+  }
+  
+    #nav{
+      background-color: transparent;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    #nav ul {
+      color: red;
+    }
+    #nav ul li {
+      list-style: none;
+      display: inline-block;
+      padding:  10px ;
+      margin: 20px;
+      border: 2px solid yellow;
+      border-radius: 5px;
+      background-color: #90e3d5;
+    }
+  
+    #nav ul li :hover{
+      background-color: #002BFF;
+      width: 100px;
+      height: 30px;
+    }
+    #flex-box{
+      display: flex;
+      margin: 10px 10px;
+  
+    }
+    .flex{
+    
+      height: 200px;
+      border: 2px solid black;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    #img1{
+      border: 2px solid black;
+      height: 120px;
+      max-width:160px;
+      margin: 10px auto ;
+      background-image: url(../images/pasta.jpeg);
+      background-size: cover;
+    }
+    #one{
+      background-color: red;
+      text-align: center;
+    }
+    #button1{
+      border: 2px solid black;
+      max-width: 70px;
+      margin: auto 40px;
+      text-align: center;
+    }
+    #button1 li {
+      list-style: none;
+    }
+    .btn{
+      height: 30px;
+    }
+    #img2{
+      border: 2px solid black;
+      height: 120px;
+      max-width:160px;
+      margin: 10px auto ;
+      background-image: url(../images/chillypotato.jpeg);
+      background-size: cover;
+    }
+    #img3{
+      border: 2px solid black;
+      height: 120px;
+      max-width:160px;
+      margin: 10px auto;
+      background-image: url(../images/dosa.jpeg);
+      background-size: cover;
+    }
+    #img4{
+      border: 2px solid black;
+      height: 120px;
+      margin: 10px  auto;
+      max-width:160px;
+      background-image: url(../images/sandwitch.jpg);
+      background-size: cover;
+    }
+    #button1{
+      border: 2px solid black;
+      max-width: 70px;
+      margin: auto 40px;
+      text-align: center;
+    }
+    #button1 li {
+      list-style: none;
+    }
+    #button1{
+      border: 2px solid black;
+      max-width: 70px;
+      margin: 10px auto;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    #button1 li {
+      list-style: none;
+    }
+    #button2{
+      border: 2px solid black;
+      max-width: 70px;
+      margin: 10px auto;
+      text-align: center;
+    }
+    #button2 li {
+      list-style: none;
+      color: red;
+    }
+    #button3{
+      border: 2px solid black;
+      max-width: 70px;
+      margin: 10px auto;
+      text-align: center;
+    }
+    #button3 li {
+      list-style: none;
+    }
+    #button4{
+      border: 2px solid black;
+      max-width: 80px;
+      margin: 10px auto;
+      text-align: center;
+      background-color: green;
+    }
+    #button4 li {
+      list-style: none;
+    }
+    #food{
+      background-color: green;
+      display:inline;
+    }
+    #foodrecipies{
+      border: 2px solid black;
+      border-radius: 5px;
+    }
+    
+  .btn {
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    background-color: red;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  .btn:hover::before {
+    opacity: 1;
+  }
+  .btn:active:after {
+    background: transparent;
+  }
+  
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }

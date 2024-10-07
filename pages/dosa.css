@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(73, 105, 96);
+}
+
+#welcome{
+   color: coral;
+}
+
+#ingredien{
+    color: rgb(220, 19, 19);
+}
+#ing li{
+    color: rgb(237, 7, 237);
+    font-weight: 700;
+}
+#batter{
+    color: cyan;
+}
+#bat{
+    color: chartreuse;
+    font-weight: 800;
+    font-size: medium;
+}
+#dosa{
+    color: fuchsia;
+}
+#do{
+    color: darkorange;
+    font-weight: 900;
+}
+#image{
+    margin:  20px auto;
+    border: 4px solid fuchsia;
+    background-color: black;
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+}
